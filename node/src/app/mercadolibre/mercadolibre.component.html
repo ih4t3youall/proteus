@@ -1,8 +1,8 @@
 <p>Mercadolibre</p>
-<button type="button" class="btn btn-success">Mercadolibre</button>
+<button type="button"(click)="refresh()" class="btn btn-success">Mercadolibre</button>
 
 <div class="aClass" *ngFor="let mercado of mercados">
-	<p>Producto: {{mercado.producto}}</p>
-	<p>Precio: {{mercado.precio}}</p>
+	<p>Producto: {{mercado.title}}</p>
+	<p>Precio: {{mercado.price}}</p>
 	<p><img width="100px" height="100px" src="{{mercado.foto}}"></p>
 </div>
