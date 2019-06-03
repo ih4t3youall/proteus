@@ -15,7 +15,7 @@ export class MeliApiService {
 		console.log('attemp to connecto to meli');
 		while (mercados.length) { mercados.pop(); }
 		//this.http.get<MercadolibreItem[]>('http://localhost:8888/getTest')
-		this.http.get<MercadolibreItem[]>('http://localhost:8888/getMeliProductsFromApi')
+				this.http.get<MercadolibreItem[]>('http://localhost:8888/getMeliProductsFromApi')
 			.subscribe( (x)=>{
 				x.forEach( (y)=>{
 					console.log(y.title);
