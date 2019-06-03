@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { BoxComponent } from './box/box.component';
 import { MercadolibreComponent } from './mercadolibre/mercadolibre.component';
 import { SpotifyComponent } from './spotify/spotify.component';
+import { TokenComponent} from './token/token.component';
 import { TestComponent} from './testComponent/test.component';
 import { TestQueryComponent} from './testQueryComponent/testQuery.component';
 import { ListacomprasComponent } from './listaCompras/listaCompras.component';
@@ -17,13 +18,15 @@ const appRoutes: Routes = [
 		path:'', component:BoxComponent,
 	},
 	{
+		//this is for url params
 		path:'test/:id', component:TestComponent ,
 	},
 	{
-		path:'testQuery/:id', component:TestQueryComponent ,
+		//this is for query
+		path:'testQuery', component:TestQueryComponent ,
 	},
 	{
-		path:'testQuery', component:TestQueryComponent ,
+		path:'token', component:TokenComponent ,
 	}
 
 ]
@@ -36,7 +39,8 @@ const appRoutes: Routes = [
 		SpotifyComponent,
 		ListacomprasComponent,
 		TestComponent,
-		TestQueryComponent
+		TestQueryComponent,
+		TokenComponent 
 
 	],
 	imports: [

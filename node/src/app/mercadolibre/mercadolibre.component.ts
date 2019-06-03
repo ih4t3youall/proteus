@@ -20,10 +20,8 @@ export class MercadolibreComponent implements OnInit{
 	refresh(){
 		this.meliApiService.connectToMeli(this.mercados); 
 	}
-	print(){
-		this.mercados.forEach( (x)=>{
-			console.log(x);
-		});
+	testNode(){
+		this.meliApiService.sendTokenToNode('miParameter'); 
 	}
 
 	ngOnInit(){

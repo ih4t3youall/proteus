@@ -16,7 +16,7 @@ export class TestQueryComponent implements OnInit{
 	}
 
 	ngOnInit(){
-		this.name = this.route.snapshot.queryParams['code'];
+		this.name = this.route.snapshot.queryParams['q'];
 	}
 
 }
